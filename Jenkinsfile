@@ -55,6 +55,7 @@ pipeline {
         def result = currentBuild.result
         if (result == null) {
           result = "SUCCESS"
+          emailextrecipients ('aparajita.deb@sap.com')
         }
       }
     }
